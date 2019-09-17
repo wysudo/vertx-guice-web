@@ -3,6 +3,8 @@ package com.matrix.vertx.guice;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
+import com.matrix.vertx.service.CacheService;
+import com.matrix.vertx.service.impl.CacheServiceImpl;
 import io.vertx.core.Vertx;
 import io.vertx.core.json.JsonObject;
 import io.vertx.reactivex.ext.web.Router;
@@ -37,6 +39,6 @@ public class GuiceInjector extends AbstractModule {
 
     @Override
     protected void configure() {
-
+        bind(CacheService.class).to(CacheServiceImpl.class).in(Singleton.class);
     }
 }
