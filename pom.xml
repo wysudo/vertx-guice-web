@@ -15,7 +15,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
-    <vertx.version>3.7.0</vertx.version>
+    <vertx.version>3.9.4</vertx.version>
     <main.class>com.matrix.vertx.Launcher</main.class>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
